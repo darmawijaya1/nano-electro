@@ -4,9 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { getEnergyPlot, getVoltagePlot } from '../utils/chart'
 
-// Tambahkan ini agar TypeScript kenal tipe PlotProps!
-import type { PlotParams } from 'react-plotly.js'
-const Plot = dynamic<PlotParams>(() => import('react-plotly.js'), { ssr: false })
+const Plot = dynamic<any>(() => import('react-plotly.js'), { ssr: false })
 
 export default function Home() {
   const [data, setData] = useState<{ t: number[]; energies: number[] }>()
