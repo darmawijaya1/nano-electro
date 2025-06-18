@@ -1,0 +1,13 @@
+nano-electro/
+├── public/
+├── pages/
+│   ├── index.tsx              # UI halaman utama
+│   └── api/
+│       └── simulate.ts        # Serverless API yang panggil backend Python
+├── utils/
+│   └── chart.ts               # Opsional, helper grafik
+├── ibmq_sim.py                # Simulasi kuantum (Python)
+├── .env                       # Token IBM Q
+├── next.config.js
+├── package.json
+└── tsconfig.json
